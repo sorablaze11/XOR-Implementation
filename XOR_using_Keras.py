@@ -4,7 +4,7 @@
 '''
 
 from keras.models import Sequential
-from keras.layers import Dense, Activation
+from keras.layers import Dense
 import numpy as np
 
 # Creating the model for our Neural Network
@@ -24,7 +24,7 @@ data = np.array(((1, 1), (1, 0), (0, 1), (0, 0)))
 labels = np.array((0, 1, 1, 0))
 
 #Training our model
-model.fit(data, labels, epochs = 5000)
+model.fit(data, labels, epochs = 4000)
 print('Enter two numbers:')
 x, y = map(int, input().split())
 if model.predict(np.array([[x, y]]))[0] > 0.8:
