@@ -1,2 +1,2 @@
 # XOR-Implementation
-Implementation of simple XOR gate.
+Implementation of XOR gate.
